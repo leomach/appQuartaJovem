@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        width: 100vw;
+        min-height: 100vw;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 100vh;
+    }
+
+    .container .carousel {
+        display: flex;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        height: 100vh;
+    }
+
+    .container .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container .carousel .item {
+        display: flex;
+        background-image: url("../../../public/img/REENCONTRODAYCAMP-36x.jpg");
+        background-size: auto 100vh;
+        width: 100vw;
+        height: 100vh;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .carousel .item .info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: end;
+    }
+    
+    .container .carousel .item .info h1 {
+        text-align: left;
+        font-size: 45px;
+        margin-left: 40px;
+    }
+    
+    .container .carousel .item .info h5 {
+        text-align: center;
+        margin-left: 40px;
+    }
+    
+    .buttons {
+        margin-top: 20px;
+        margin-bottom: 160px;
+        top: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .buttons .back {
+        text-decoration: none;
+        color: darkgray;
+        font-size: 1.2rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .next {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        background-color: aliceblue;
+        width: 200px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /*---------- ITEM 2 ------------*/
+
+    .container .carousel .item2 {
+        display: flex;
+        background-image: url("../../../public/img/REENCONTRODAYCAMP-41x.jpg");
+        background-size: auto 100vh;
+        width: 100vw;
+        height: 100vh;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .carousel .item2 .info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: end;
+    }
+
+    .container .carousel .item2 .info .name {
+        margin-bottom: 70px;
+    }
+
+    .container .carousel .item2 .info h1 {
+        text-align: left;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding: 0px 10px;
+        background-color:rgb(27, 27, 27);
+    }
+    
+    .container .carousel .item2 .info h5 {
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 3px;
+        padding: 0px 10px;
+        background-color:darkslateblue;
+    }
+
+    /*---------- ITEM 3 ------------*/
+
+    .container .carousel .item3 {
+        display: flex;
+        background-image: url("../../../public/img/REENCONTRODAYCAMP-42x.jpg");
+        background-size: auto 100vh;
+        width: 100vw;
+        height: 100vh;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .carousel .item3 .info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: end;
+    }
+
+    .container .carousel .item3 .info img {
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    .container .carousel .item3 .info h1 {
+        text-align: left;
+        font-size: 30px;
+        margin-left: 40px;
+    }
+
+    .container .carousel .item3 .info h5 {
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .container .carousel .item3 .info h5 a {
+        text-decoration: none;
+        color: skyblue;
+    }
+
+    /*---------- ITEM 4 ------------*/
+
+    .container .carousel .item4 {
+        display: flex;
+        background-image: url("../../../public/img/REENCONTRODAYCAMP-43x.jpg");
+        background-size: auto 100vh;
+        width: 100vw;
+        height: 100vh;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .carousel .item4 .info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: end;
+    }
+
+    .container .carousel .item4 .info h1 {
+        text-align: left;
+        font-size: 45px;
+        margin-left: 40px;
+    }
+
+    .container .carousel .item4 .info h5 {
+        margin-bottom: 370px;
+        text-align: center;
+        margin-left: 40px;
+    }
+}
