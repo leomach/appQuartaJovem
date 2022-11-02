@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react"
 import './index.css'
+import { Link } from 'react-router-dom'
 
 function Home() {
     const carousel = useRef(null)
@@ -34,11 +35,11 @@ function Home() {
                 <div className="item2">
                     <div className="info">
                         <div className="name">
-                        <h1>Nossas programações:</h1>
-                        <h5>Quarta Jovem - Sábado - 18hrs</h5>
-                        <h5>Célula Jovem - Segunda - 19:30hrs</h5>
-                        <h5>Escola Bíblica Dominical - Domingo - 9hrs</h5>
-                        <h5>Culto de celebração - Domingo - 18hrs</h5>
+                            <h1>Nossas programações:</h1>
+                            <h5>Quarta Jovem - Sábado - 18hrs</h5>
+                            <h5>Célula Jovem - Segunda - 19:30hrs</h5>
+                            <h5>Escola Bíblica Dominical - Domingo - 9hrs</h5>
+                            <h5>Culto de celebração - Domingo - 18hrs</h5>
                         </div>
                         <div className="buttons">
                             <button onClick={handleRightClick} className="back">Voltar</button>
@@ -63,7 +64,9 @@ function Home() {
                         <h5>é de graça ;)</h5>
                         <div className="buttons">
                             <button onClick={handleRightClick} className="back">Voltar</button>
-                            <button onClick={handleLeftClick} className="next">Login / Inscreva-se</button>
+                            <button className="next">
+                                <Link className="btn-login" to='/login'>Login / Inscreva-se</Link>
+                            </button>
                         </div>
                     </div>
                 </div>
