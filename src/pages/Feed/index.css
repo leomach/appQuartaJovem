@@ -1,0 +1,180 @@
+.feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 600px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.feed .em-breve {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.feed .em-breve h1 {
+    color: brown;
+}
+
+.feed .em-breve h4 {
+    margin-top: 100px;
+}
+
+.feed .tituloFeed1 {
+    margin-top: 40px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+.feed .cards {
+    margin-top: 10px;
+    padding: 0px 20px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    overflow-y: hidden;
+}
+.feed .cards::-webkit-scrollbar {
+    display: none;
+}
+
+.feed .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    flex: none;
+    scroll-snap-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.feed .flip-card .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.feed .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.feed .flip-card .flip-card-front1,
+.feed .flip-card .flip-card-back1,
+.feed .flip-card .flip-card-front2,
+.feed .flip-card .flip-card-back2,
+.feed .flip-card .flip-card-front3,
+.feed .flip-card .flip-card-back3,
+.feed .flip-card .flip-card-front4,
+.feed .flip-card .flip-card-back4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
+
+.feed .flip-card .flip-card-front1,
+.feed .flip-card .flip-card-front2,
+.feed .flip-card .flip-card-front3,
+.feed .flip-card .flip-card-front4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: 300px;
+}
+/* CARDS */
+
+.feed .flip-card .flip-card-front1,
+.feed .flip-card .flip-card-back1 {
+    background-image:
+    url('../../../public/img/REENCONTRODAYCAMP-41x.jpg');
+    /* linear-gradient(45deg, #6f04d9, #d9048e); */
+}
+
+.feed .flip-card .flip-card-front2,
+.feed .flip-card .flip-card-back2 {
+    background-image:
+    url('../../../public/img/REENCONTRODAYCAMP-36x.jpg');
+    /* linear-gradient(45deg, #6f04d9, #d9048e); */
+}
+
+.feed .flip-card .flip-card-front3,
+.feed .flip-card .flip-card-back3 {
+    background-image:
+    url('../../../public/img/REENCONTRODAYCAMP-42x.jpg');
+    /* linear-gradient(45deg, #6f04d9, #d9048e); */
+}
+
+.feed .flip-card .flip-card-front4,
+.feed .flip-card .flip-card-back4 {
+    background-image:
+    url('../../../public/img/REENCONTRODAYCAMP-43x.jpg');
+    /* linear-gradient(45deg, #6f04d9, #d9048e); */
+}
+
+.feed .flip-card .flip-card-front1 img,
+.feed .flip-card .flip-card-front2 img,
+.feed .flip-card .flip-card-front3 img,
+.feed .flip-card .flip-card-front4 img {
+    width: 200px;
+}
+
+.feed .flip-card .flip-card-back1,
+.feed .flip-card .flip-card-back2,
+.feed .flip-card .flip-card-back3,
+.feed .flip-card .flip-card-back4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: rotateY(180deg);
+    color: aliceblue;
+    background-position: center;
+    background-size: 300px;
+}
+
+.feed .flip-card .flip-card-back1 img,
+.feed .flip-card .flip-card-back2 img,
+.feed .flip-card .flip-card-back3 img,
+.feed .flip-card .flip-card-back4 img {
+    width: 140px;
+}
+
+.feed .flip-card .flip-card-back1 .img,
+.feed .flip-card .flip-card-back2 .img,
+.feed .flip-card .flip-card-back3 .img,
+.feed .flip-card .flip-card-back4 .img {
+    flex-grow: 2;
+    padding: 10px;
+}
+
+.feed .flip-card .flip-card-back1 h3,
+.feed .flip-card .flip-card-back2 h3,
+.feed .flip-card .flip-card-back3 h3,
+.feed .flip-card .flip-card-back4 h3 {
+    flex-grow: 0;
+    font-size: 12px;
+}
+
+.feed .flip-card .flip-card-back1 h1,
+.feed .flip-card .flip-card-back2 h1,
+.feed .flip-card .flip-card-back3 h1,
+.feed .flip-card .flip-card-back4 h1 {
+    flex-grow: 1;
+    width: 150px;
+    font-size: 22px;
+}

@@ -1,0 +1,11 @@
+.eventos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.eventos h1 {
+    color: brown;
+}

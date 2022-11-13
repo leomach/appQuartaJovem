@@ -1,0 +1,19 @@
+.navbarUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+}
+
+.navbarUser .home {
+
+}
+
+.navbarUser .user img {
+ padding: 0;
+}

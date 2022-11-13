@@ -1,0 +1,75 @@
+.user {
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+/* FOTO, NOME, SOBRENOME, ANIVERSÁRIO */
+.user .perfil {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+.user .perfil .info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.user .perfil .info h3 {
+    width: 160px;
+    font-size: 15px;
+}
+
+.user .perfil .info h4 {
+    font-size: 12px;
+}
+
+
+.user .perfil .img {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    border-radius: 75px;
+    margin: 0px 15px 0px 35px;
+}
+
+/* DESCRIÇÃO, WHATSAPP */
+
+.user .info2 {
+    padding: 15px 40px;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.user .info2 a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: rgb(39, 39, 39);
+    color: aliceblue;
+    transition: all 0.5s;
+}
+
+.user .info2 button:hover {
+    background-color:darkgray;
+    border-color: transparent;
+    color: black;
+}
